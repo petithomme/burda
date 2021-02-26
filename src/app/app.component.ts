@@ -14,8 +14,8 @@ export class AppComponent {
   started = false;
   moviesList = [];
 
-  public callAPI(): void {
-    axios.get(`${this.baseAPIurl}?apikey=${this.apiKey}&s=Die Hard`)
+  public callAPI(movieTitle: string): void {
+    axios.get(`${this.baseAPIurl}?apikey=${this.apiKey}&s=${movieTitle}`)
       .then((res: any) => {
         this.moviesList = [];
         res.data.Search.forEach( (movie) => {
@@ -25,6 +25,7 @@ export class AppComponent {
       })
       .catch((error) => {
         this.moviesList = [];
+        this.started = true;
         console.log(error);
       });
 

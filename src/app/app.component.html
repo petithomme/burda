@@ -8,8 +8,8 @@
     Please enter a movie title :
   </div>
   <div id="userInput">
-    <input type="text" (keydown.enter)="this.callAPI()"name="title" placeholder="Enter a movie title">
-    <button class="button" (click)="this.callAPI()"> > </button>
+    <input type="text" (keydown.enter)="this.callAPI(movieTitle.value)"name="title" placeholder="Enter a movie title" #movieTitle>
+    <button class="button" (click)="this.callAPI(movieTitle.value)"> > </button>
   </div>
 
   <div id="empty" *ngIf="this.moviesList.length == 0 && this.started">

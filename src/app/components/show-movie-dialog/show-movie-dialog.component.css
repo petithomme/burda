@@ -1,0 +1,25 @@
+#container {
+  font-family: Roboto;
+}
+
+#title {
+  font-family: Roboto;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#poster {
+  display: flex;
+  justify-content: center;
+}
+
+#informations {
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#plot {
+  font-family: Roboto;
+  margin-top: 20px;
+}

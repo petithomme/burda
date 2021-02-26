@@ -1,1 +1,18 @@
-<p>show-movie-dialog works!</p>
+<div id="container">
+
+  <div id="title"> {{ this.data.Title}}</div>
+  <div id="informations">
+    <div id="type"> <strong>Type : </strong>{{ this.data.Type}}</div>
+    <div id="year"> <strong>Year : </strong>{{ this.data.Year}}</div>
+    <div id="director"> <strong>Director : </strong>{{ this.data.Director}}</div>
+    <div id="boxOffice"> <strong>BoxOffice : </strong>{{ this.data.BoxOffice}}</div>
+    <div id="duration"> <strong>Duration : </strong>{{ this.data.Runtime}}</div>
+  </div>
+  <div id="poster">
+    <img [src]="this.data.Poster">
+  </div>
+  <div id="plot">
+    {{ this.data.Plot}}
+  </div>
+
+</div>

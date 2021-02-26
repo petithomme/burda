@@ -1,4 +1,4 @@
-<div id="movieContainer">
+<div id="movieContainer" (click)="this.openPopup(this.movie.imdbID)">
   <div id="titleContainer">
     <div id="title"> {{ this.movie.Title }} </div>
     <div id="year">{{ this.movie.Year}} </div>

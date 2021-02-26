@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
+import {IMovieFull} from '../../interfaces/IMovieFull';
+import {MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-show-movie-dialog',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowMovieDialogComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: IMovieFull) { }
 
   ngOnInit(): void {
+    console.log(this.data);
   }
 
 }

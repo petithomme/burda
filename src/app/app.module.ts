@@ -1,18 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { DisplayMovieComponent } from './components/display-movie/display-movie.component';
+import { ShowMovieDialogComponent } from './components/show-movie-dialog/show-movie-dialog.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DisplayMovieComponent
+    DisplayMovieComponent,
+    ShowMovieDialogComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [ShowMovieDialogComponent],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
