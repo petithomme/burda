@@ -12,7 +12,6 @@ export class ShowMovieDialogComponent implements OnInit {
   constructor(@Inject(MAT_DIALOG_DATA) public data: IMovieFull) { }
 
   ngOnInit(): void {
-    console.log(this.data);
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import axios from 'axios';
 import { IMovie } from './interfaces/IMovie';
+import {Configuration} from '../environments/configuration';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +10,11 @@ import { IMovie } from './interfaces/IMovie';
 })
 export class AppComponent {
   title = 'burda';
-  apiKey = 'b9f2830a';
-  baseAPIurl = 'http://www.omdbapi.com/';
   started = false;
   moviesList = [];
 
   public callAPI(movieTitle: string): void {
-    axios.get(`${this.baseAPIurl}?apikey=${this.apiKey}&s=${movieTitle}`)
+    axios.get(`${Configuration.baseAPIurl}?apikey=${Configuration.apiKey}&s=${movieTitle}`)
       .then((res: any) => {
         this.moviesList = [];
         res.data.Search.forEach( (movie) => {
