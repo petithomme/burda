@@ -1,0 +1,31 @@
+#movieContainer {
+  font-family: Roboto;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+#titleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 10px auto;
+  border-width: 0;
+  border-bottom: red;
+  border-style: solid;
+  border-bottom-width: 2px;
+}
+
+#title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+#year {
+  font-size: 0.8rem;
+  font-variant: small-caps;
+}

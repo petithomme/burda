@@ -1,1 +1,8 @@
-<H1>
+<div id="movieContainer">
+  <div id="titleContainer">
+    <div id="title"> {{ this.movie.Title }} </div>
+    <div id="year">{{ this.movie.Year}} </div>
+  </div>
+
+  <img [src]="this.movie.Poster">
+</div>

@@ -1,0 +1,26 @@
+#moviesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Roboto;
+}
+
+#empty {
+  font-family: Roboto;
+  font-weight: 700 ;
+  color: red;
+}
+
+#inputTitle {
+  font-family: Roboto;
+  font-weight: 700 ;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+input {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Roboto;
+}
