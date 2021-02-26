@@ -1,4 +1,4 @@
 export class Configuration {
-  static apiKey = 'b9f2830a';
+  static apiKey = 'b23a3a5e';
   static baseAPIurl = 'http://www.omdbapi.com/';
 }
